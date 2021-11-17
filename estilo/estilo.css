@@ -1,0 +1,1674 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Montserrat&display=swap');
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	
+}
+
+html{
+	height: 100%;
+}
+
+body{
+
+	min-height: 100%; 
+	 
+}
+
+.container{
+  display: grid;
+	grid-template: 
+	"header"   100px
+	"main"	   auto
+	"footer"   50px
+	;
+}
+
+
+/* X-Large  (large desktops, 1200px and up)*/
+@media (min-width: 1200px) and (max-width: 1399px) {
+
+.container{
+		grid-template: 
+		"header 	header 	header" 	100px 
+		"main    main     main" 	auto
+		"footer 	footer 	footer" 	50px /
+		 250px 		auto 	250px;
+	}
+
+.header{
+	 grid-template-columns: 1fr;
+  grid-template-areas: 
+    "logo nav "
+    "logo nav "
+    "logo nav "; 
+	grid-area: header;
+	background-color: #cc0606;
+}
+
+.logo{
+	grid-area: logo; 
+	float: left;
+	margin-left: 50px;
+	margin-top: 5px;
+	width: 180px;
+	height: 75px;
+
+}
+
+.navbar{
+	grid-area: navbar;
+   background-color: #cc0606;
+}
+
+nav li {
+	display: inline;
+}
+
+nav li a {
+	width: 15%;
+	height: 35px;
+	margin-left: 10%;
+	padding-top: 50px;
+	float: right;
+	text-decoration: none;
+	font-size: 15px;
+	text-align: center;
+	float: right;
+	font-family: 'Mochiy Pop P One', sans-serif;
+	color: #ffffff;
+	transition: ease-in .4s;
+}
+
+nav li a:hover {
+   transform: scale(1.2);
+}
+
+
+.main{
+	display: grid;
+	height: 500px;
+   grid-area: main;
+  grid-template-areas:
+    "arenita_2 titulo_main";
+  background:
+	 url(../img/1.png) right top no-repeat,
+	 url(../img/2.png) right bottom no-repeat,
+	 url(../img/3.png) left bottom no-repeat,
+	 url(../img/4.png) left 100px no-repeat;
+}
+
+.main_mini{
+	display: grid;
+	height: 500px;
+   grid-area: main;
+  grid-template-areas:
+    "arenita_2 titulo_main";
+}
+
+
+.titulo_main{
+	 grid-area: titulo_main; 
+	font-family: 'Mochiy Pop P One', sans-serif;
+	font-size: 3.5rem;
+	min-height: 100%;
+	padding-top: 150px;
+	margin-left:-40px;
+	color: #cc0606;
+	text-shadow: 3px -3px 1px #d6d6d6;
+}
+
+.arenita_2{
+	grid-area: arenita_2; 
+	width: 340px;
+	height: 429px ;
+	margin-left: 230px;
+	margin-top: 30px;
+}
+
+
+.subtitulo_main{
+	 grid-area: titulo_main; 
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5rem;
+	min-height: 100%;
+	padding-top: 315px;
+	margin-left: -40px;
+	color: #cc0606;
+}
+
+
+
+.footer{
+	grid-area: footer;
+	background-color: #000000;
+	height: 60px;
+}
+
+.uces{
+	width: 70px;
+	height: 40px;
+	float: left;
+	margin-left: 3%;
+	margin-top: 10px;
+	margin-right: 25%;
+}
+
+.minisitio{
+	font-family: 'Montserrat', sans-serif;
+	float: left;
+	margin-left: 550px;
+	margin-right: 31%;
+	margin-top: -30px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.nick{
+	width: 150px;
+	height: 20px;
+	float: right;
+	clear: both;
+	margin-right: 3%;
+	margin-top: -30px;
+}
+
+#formulario{
+	width: 80%;
+	height: 450px;
+	background-color: #cc0606;
+	border-radius: 30px;
+	float: left;
+	padding-top: 1.5%;
+	padding-left: 4.5%;
+	margin-top: 3%;
+	margin-left: -18%;
+	text-align: left;
+	box-shadow: 1px 1px 10px black;
+}
+
+
+#texto_formulario{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	min-height: 100%;
+	margin-top: 5%;
+	margin-left: 5%;
+	color: #ffffff;
+
+}
+
+#imagen_formulario{
+	width: 700px;
+	height: 500px;
+}
+
+.arenita_3{
+	width: 566px;
+	height: 358px ;
+	margin-left: 130px;
+	margin-top: 70px;
+	float: left;
+
+}
+
+.texto_formulario{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	min-height: 100%;
+	margin-top: 5%;
+	margin-left: 6%;
+	color: #ffffff;
+
+}
+.caja {
+	width: 300px;
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+} 
+
+.caja_2 {
+	width: 300px;
+	height: 150px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+} 
+
+.boton{
+	width: 50%;
+	height: 40px;
+	background-color: #ffffff;
+	color: #cc0606;
+	border-radius: 10px;
+	font-size: 12px;
+	font-family: 'Mochiy Pop P One', sans-serif;
+	margin-left: 5%;
+}
+
+
+#kids{
+	padding-left: 35%;
+	padding-top: 8%;
+	width: 30%;
+	float: left;
+}
+
+.kids_div{
+	width: 600px;
+	height: 200px;
+	margin-top: 40px;
+	margin-left: -2%;
+	box-shadow: 10px 10px 20px #aaa;
+	float: right;
+}
+
+#teens{
+	padding-left: 35%;
+	padding-top: 3%;
+	width: 30%;
+	float: left;
+}
+
+.teens_div{
+	width: 600px;
+	height: 200px;
+	margin-top: -0px;
+	margin-left: -2%;
+	box-shadow: 10px 10px 20px #aaa;
+}
+
+.titulo_actividades{
+	font-family: 'Mochiy Pop P One', sans-serif;
+	font-size: 2.5rem;
+	min-height: 100%;
+	padding-top: 20px;
+	padding-left: 5%;
+	color: #cc0606;
+	text-shadow: 3px -3px 1px #d6d6d6;
+
+}
+
+.subtitulo_actividades{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2rem;
+	min-height: 100%;
+margin-top: -120px;
+	padding-left: 5%;
+	color: #cc0606;
+}
+
+.texto_actividades{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.9rem;
+	min-height: 100%;
+margin-top: -160px;
+	padding-left: 5%;
+	color: #000000;
+}
+.texto_actividades2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.9rem;
+	min-height: 100%;
+	margin-top: -160px;
+	padding-left: 5%;
+	color: #000000;
+}
+
+#galeria{
+	width: 65%;
+	height: 70%;
+	margin-left: 9%;
+	padding-left: 6.5%;
+	padding-top: 2%;
+	background-color: #cc0606;
+	border-radius: 	10px 10px 10px 10px;
+	box-shadow: 10px 10px 20px #aaa;
+	margin-top: 10%;
+}
+
+.texto_galería{
+	font-family: 'Mochiy Pop P One', sans-serif;
+	font-size: 2.5rem;
+	min-height: 100%;
+	padding-top: 30px;
+	padding-left: 350%;
+	color: #cc0606;
+	text-shadow: 3px -3px 1px #d6d6d6;
+
+}
+
+
+#pdf{
+	width: 75%;
+	height: 300px;
+	margin-top: 15%;
+	margin-left: 49%;
+
+}
+
+.titulo_relevamiento{
+	 grid-area: titulo_main; 
+	font-family: 'Mochiy Pop P One', sans-serif;
+	font-size: 3.5rem;
+	min-height: 100%;
+	margin-left: -350px;
+	padding-top: 20px;
+	color: #cc0606;
+	text-shadow: 3px -3px 1px #d6d6d6;
+}
+
+.tipografia{
+	width: 700px;
+	height: 300px;
+	margin-top: 130px;
+	margin-left: 300px;
+	
+}
+.titulo_tipografia{
+	 grid-area: titulo_main; 
+	font-family: 'Mochiy Pop P One', sans-serif;
+	font-size: 3.5rem;
+	min-height: 100%;
+	margin-left: -700px;
+	padding-top: 20px;
+	color: #cc0606;
+	text-shadow: 3px -3px 1px #d6d6d6;
+}
+.cromatica{
+	width: 700px;
+	height: 200px;
+	margin-top: 170px;
+	margin-left: 300px;
+	
+}
+
+}
+
+/* X-Large  (large desktops, 1400px and up)*/
+@media (min-width: 1400px) and (max-width: 1600px){
+
+.container{
+		grid-template: 
+		"header 	header 	header" 	100px 
+		"main  	main 	   main" 	auto
+		"footer 	footer 	footer" 	50px /
+		 250px 		auto 	250px;
+	}
+
+.header{
+	 grid-template-columns: 1fr;
+  grid-template-areas: 
+    "logo nav "
+    "logo nav "
+    "logo nav "; 
+	grid-area: header;
+	background-color: #cc0606;
+}
+.logo{
+	grid-area: logo; 
+	float: left;
+	margin-left: 50px;
+	margin-top: 5px;
+	width: 180px;
+	height: 75px;
+
+}
+
+.navbar{
+	grid-area: navbar;
+   background-color: #cc0606;
+}
+
+nav li {
+	display: inline;
+}
+
+nav li a {
+	width: 15%;
+	height: 35px;
+	margin-left: 10%;
+	padding-top: 50px;
+	float: right;
+	text-decoration: none;
+	font-size: 15px;
+	text-align: center;
+	float: right;
+	font-family: 'Mochiy Pop P One', sans-serif;
+	color: #ffffff;
+	transition: ease-in .4s;
+}
+
+nav li a:hover {
+   transform: scale(1.2);
+}
+
+
+.main{
+	display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "arenita_2 titulo_main";
+  grid-area: main;
+  height: 500px;
+  background:
+	 url(../img/1.png) right top no-repeat,
+	 url(../img/2.png) right bottom no-repeat,
+	 url(../img/3.png) left bottom no-repeat,
+	 url(../img/4.png) left 100px no-repeat;
+}
+.minisitio{
+	font-family: 'Montserrat', sans-serif;
+	float: left;
+	margin-left: 550px;
+	margin-right: 31%;
+	margin-top: -30px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+
+
+nav li {
+	display: inline;
+}
+
+nav li a {
+	margin-left: 12%;
+	float: right;
+	text-decoration: none;
+}
+
+.arenita_2{
+	grid-area: arenita_2; 
+	width: 340px;
+	height: 429px ;
+	margin-left: 230px;
+	margin-top: 30px;
+}
+
+.arenita_3{
+	grid-area: arenita_3; 
+	width: 466px;
+	height: 337px ;
+	margin-left: 50px;
+	margin-top: 30px;
+	float: left;
+
+}
+
+.arenita3{
+	width: 500px;
+	height: 400px ;
+	padding-left: 120px;
+	margin-top: 30px;
+	float: left;
+
+}
+
+
+.titulo_main{
+	 grid-area: titulo_main; 
+	font-family: 'Mochiy Pop P One', sans-serif;
+	font-size: 3.5rem;
+	min-height: 100%;
+	padding-top: 150px;
+	margin-left:-50px;
+	color: #cc0606;
+	text-shadow: 3px -3px 1px #d6d6d6;
+}
+
+.subtitulo_main{
+	grid-area: titulo_main; 
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5rem;
+	min-height: 100%;
+	color: #cc0606;
+	float: right;
+margin-left:-50px;
+	padding-top: 320px;
+
+}
+
+
+.footer{
+	grid-area: footer;
+	background-color: #000000;
+	height: 60px;
+}
+
+.uces{
+	width: 70px;
+	height: 40px;
+	float: left;
+	margin-left: 3%;
+	margin-top: 10px;
+	margin-right: 25%;
+}
+
+.minisitio{
+	font-family: 'Montserrat', sans-serif;
+	float: left;
+	margin-left: 570px;
+	margin-right: 31%;
+	margin-top: -30px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.nick{
+	width: 150px;
+	height: 20px;
+	float: right;
+	clear: both;
+	margin-right: 3%;
+	margin-top: -30px;
+}
+
+#formulario{
+	width: 80%;
+	height: 450px;
+	background-color: #cc0606;
+	border-radius: 30px;
+	float: left;
+	padding-top: 1.5%;
+	padding-left: 4.5%;
+	margin-top: 3%;
+	margin-left: -18%;
+	text-align: left;
+	box-shadow: 1px 1px 10px black;
+}
+
+
+#texto_formulario{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	min-height: 100%;
+	margin-top: 5%;
+	margin-left: 5%;
+	color: #ffffff;
+
+}
+
+#imagen_formulario{
+	width: 700px;
+	height: 500px;
+}
+
+.arenita_3{
+	width: 566px;
+	height: 358px ;
+	margin-left: 130px;
+	margin-top: 70px;
+	float: left;
+
+}
+
+.texto_formulario{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	min-height: 100%;
+	margin-top: 5%;
+	margin-left: 6%;
+	color: #ffffff;
+
+}
+.caja {
+	width: 300px;
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+} 
+
+.caja_2 {
+	width: 300px;
+	height: 150px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+} 
+
+.boton{
+	width: 50%;
+	height: 40px;
+	background-color: #ffffff;
+	color: #cc0606;
+	border-radius: 10px;
+	font-size: 12px;
+	font-family: 'Mochiy Pop P One', sans-serif;
+	margin-left: 5%;
+}
+
+#kids{
+	padding-left: 35%;
+	padding-top: 8%;
+	width: 30%;
+	float: left;
+}
+
+.kids_div{
+	width: 600px;
+	height: 200px;
+	margin-top: 40px;
+	margin-left: -2%;
+	box-shadow: 10px 10px 20px #aaa;
+	float: right;
+}
+
+#teens{
+	padding-left: 35%;
+	padding-top: 3%;
+	width: 30%;
+	float: left;
+}
+
+.teens_div{
+	width: 600px;
+	height: 200px;
+	margin-top: -0px;
+	margin-left: -2%;
+	box-shadow: 10px 10px 20px #aaa;
+}
+
+.titulo_actividades{
+	font-family: 'Mochiy Pop P One', sans-serif;
+	font-size: 2.5rem;
+	min-height: 100%;
+	padding-top: 20px;
+	padding-left: 5%;
+	color: #cc0606;
+	text-shadow: 3px -3px 1px #d6d6d6;
+
+}
+
+.subtitulo_actividades{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2rem;
+	min-height: 100%;
+margin-top: -120px;
+	padding-left: 5%;
+	color: #cc0606;
+}
+
+.texto_actividades{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.9rem;
+	min-height: 100%;
+margin-top: -160px;
+	padding-left: 5%;
+	color: #000000;
+}
+#galeria{
+	width: 65%;
+	height: 70%;
+	margin-left: 9%;
+	padding-left: 6.5%;
+	padding-top: 2%;
+	background-color: #cc0606;
+	border-radius: 	10px 10px 10px 10px;
+	box-shadow: 10px 10px 20px #aaa;
+	margin-top: 10%;
+}
+
+#pdf{
+	width: 75%;
+	height: 500px;
+	margin-left: 270%;
+	margin-top: -500px;
+
+}
+
+.titulo_relevamiento{
+	 grid-area: titulo_main; 
+	font-family: 'Mochiy Pop P One', sans-serif;
+	font-size: 3.5rem;
+	min-height: 100%;
+	padding-top: 50px;
+	margin-left: 550px;
+	color: #cc0606;
+	text-shadow: 3px -3px 1px #d6d6d6;
+}
+
+.tipografia{
+	width: 700px;
+	height: 300px;
+	margin-top: 130px;
+	margin-left: 300px;
+	
+}
+.titulo_tipografia{
+	 grid-area: titulo_main; 
+	font-family: 'Mochiy Pop P One', sans-serif;
+	font-size: 3.5rem;
+	min-height: 100%;
+	margin-left: -700px;
+	padding-top: 20px;
+	color: #cc0606;
+	text-shadow: 3px -3px 1px #d6d6d6;
+}
+
+
+}
+
+
+/* Large  (desktop, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199px){
+
+.container{
+		grid-template: 
+		"header 	header 	header" 	100px 
+		"main  	main 	   main" 	auto
+		"footer 	footer 	footer" 	50px /
+		 250px 		auto 	250px;
+	}
+
+.header{
+	 grid-template-columns: 1fr;
+  grid-template-areas: 
+    "logo nav "
+    "logo nav "
+    "logo nav "; 
+	grid-area: header;
+	background-color: #cc0606;
+}
+
+.logo{
+	grid-area: logo; 
+	float: left;
+	margin-left: 20px;
+	margin-top: 5px;
+	width: 180px;
+	height: 75px;
+
+}
+
+.navbar{
+	grid-area: navbar;
+   background-color: #cc0606;
+}
+
+nav li {
+	display: inline;
+}
+
+nav li a {
+	width: 15%;
+	height: 35px;
+	margin-left: 10%;
+	padding-top: 50px;
+	float: right;
+	text-decoration: none;
+	font-size: 15px;
+	text-align: center;
+	float: right;
+	font-family: 'Mochiy Pop P One', sans-serif;
+	color: #ffffff;
+	transition: ease-in .4s;
+}
+
+nav li a:hover {
+   transform: scale(1.2);
+}
+
+.main{
+	display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "arenita_2 titulo_main";
+  grid-area: main;
+  height: 500px;
+  background:
+	 url(../img/1.png) right top no-repeat,
+	 url(../img/2.png) right bottom no-repeat,
+	 url(../img/3.png) left bottom no-repeat,
+	 url(../img/4.png) left 100px no-repeat;
+}
+
+
+.arenita_2{
+	grid-area: arenita_2; 
+	width: 290px;
+	height: 379px ;
+	margin-left: 120px;
+	margin-top: 30px;
+}
+
+.titulo_main{
+	 grid-area: titulo_main; 
+	font-family: 'Mochiy Pop P One', sans-serif;
+	font-size: 2.8rem;
+	min-height: 100%;
+	padding-top: 150px;
+	margin-left:-70px;
+	color: #cc0606;
+	text-shadow: 3px -3px 1px #d6d6d6;
+}
+
+.subtitulo_main{
+	grid-area: titulo_main; 
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.5rem;
+	min-height: 100%;
+	color: #cc0606;
+	float: right;
+margin-left:-70px;
+	padding-top: 300px;
+
+}
+
+
+.footer{
+	grid-area: footer;
+	background-color: #000000;
+	height: 60px;
+}
+
+.uces{
+	width: 70px;
+	height: 40px;
+	float: left;
+	margin-left: 3%;
+	margin-top: 10px;
+	margin-right: 25%;
+}
+
+.minisitio{
+	font-family: 'Montserrat', sans-serif;
+	float: left;
+	margin-left: 450px;
+	margin-right: 31%;
+	margin-top: -30px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.nick{
+	width: 150px;
+	height: 20px;
+	float: right;
+	clear: both;
+	margin-right: 3%;
+	margin-top: -30px;
+}
+
+#formulario{
+	width: 90%;
+	height: 450px;
+	background-color: #cc0606;
+	border-radius: 30px;
+	float: left;
+	padding-top: 1.5%;
+	padding-left: 4.5%;
+	margin-top: 3%;
+	margin-left: -18%;
+	text-align: left;
+	box-shadow: 1px 1px 10px black;
+}
+
+
+#texto_formulario{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	min-height: 100%;
+	margin-top: 5%;
+	margin-left: 5%;
+	color: #ffffff;
+
+}
+
+#imagen_formulario{
+	width: 700px;
+	height: 500px;
+}
+
+.arenita_3{
+	width: 526px;
+	height: 318px ;
+	margin-left: 60px;
+	margin-top: 80px;
+	float: left;
+
+}
+
+.texto_formulario{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	min-height: 100%;
+	margin-top: 5%;
+	margin-left: 6%;
+	color: #ffffff;
+
+}
+.caja {
+	width: 300px;
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+} 
+
+.caja_2 {
+	width: 300px;
+	height: 150px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+} 
+
+.boton{
+	width: 50%;
+	height: 40px;
+	background-color: #ffffff;
+	color: #cc0606;
+	border-radius: 10px;
+	font-size: 12px;
+	font-family: 'Mochiy Pop P One', sans-serif;
+	margin-left: 5%;
+}
+
+#kids{
+	padding-left: 25%;
+	padding-top: 8%;
+	width: 30%;
+	float: left;
+}
+
+.kids_div{
+	width: 600px;
+	height: 200px;
+	margin-top: 40px;
+	margin-left: -15%;
+	box-shadow: 10px 10px 20px #aaa;
+	float: right;
+}
+
+#teens{
+	padding-left: 25%;
+	padding-top: 3%;
+	width: 30%;
+	float: left;
+}
+
+.teens_div{
+	width: 600px;
+	height: 200px;
+	margin-top: -0px;
+	margin-left: -15%;
+	box-shadow: 10px 10px 20px #aaa;
+}
+
+.titulo_actividades{
+	font-family: 'Mochiy Pop P One', sans-serif;
+	font-size: 2.5rem;
+	min-height: 100%;
+	padding-top: 20px;
+	padding-left: 5%;
+	color: #cc0606;
+	text-shadow: 3px -3px 1px #d6d6d6;
+
+}
+
+.subtitulo_actividades{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2rem;
+	min-height: 100%;
+	margin-top: -120px;
+	padding-left: 5%;
+	color: #cc0606;
+}
+
+.texto_actividades{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.9rem;
+	min-height: 100%;
+margin-top: -160px;
+	padding-left: 5%;
+	color: #000000;
+}
+
+.texto_actividades2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.9rem;
+	min-height: 100%;
+	margin-top: -160px;
+	padding-left: 5%;
+	color: #000000;
+}
+#galeria{
+	width: 100%;
+	height: 100%;
+	margin-left: -40%;
+	padding-left: 9%;
+	padding-top: 4%;
+	background-color: #cc0606;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 10px 10px 20px #aaa;
+	margin-top: 10%;
+}
+.texto_galería{
+	font-family: 'Mochiy Pop P One', sans-serif;
+	font-size: 2.5rem;
+	min-height: 100%;
+	padding-top: 30px;
+	padding-left: 100%;
+	color: #cc0606;
+	text-shadow: 3px -3px 1px #d6d6d6;
+
+}
+
+}
+
+/*Medium  (tablet, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991px){
+
+.container{
+		grid-template: 
+		"header 	header 	header" 	100px 
+		"main  	main 	   main" 	auto
+		"footer 	footer 	footer" 	50px /
+		 250px 		auto 	250px;
+	}
+
+.header{
+	 grid-template-columns: 1fr;
+  grid-template-areas: 
+    "logo nav "
+    "logo nav "
+    "logo nav "; 
+	grid-area: header;
+	background-color: #cc0606;
+}
+
+.logo{
+	grid-area: logo; 
+	float: left;
+	margin-left: 20px;
+	margin-top: 5px;
+	width: 180px;
+	height: 75px;
+
+}
+
+.navbar{
+	grid-area: navbar;
+   background-color: #cc0606;
+}
+
+nav li {
+	display: inline;
+}
+
+nav li a {
+	width: 15%;
+	height: 35px;
+	margin-left: 10%;
+	padding-top: 50px;
+	float: right;
+	text-decoration: none;
+	font-size: 15px;
+	text-align: center;
+	float: right;
+	font-family: 'Mochiy Pop P One', sans-serif;
+	color: #ffffff;
+	transition: ease-in .4s;
+}
+
+nav li a:hover {
+   transform: scale(1.2);
+}
+
+.main{
+	display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "arenita_2 titulo_main";
+  grid-area: main;
+  height: 500px;
+  background:
+	 url(../img/1.png) right top no-repeat,
+	 url(../img/2.png) right bottom no-repeat,
+	 url(../img/3.png) left bottom no-repeat,
+	 url(../img/4.png) left 100px no-repeat;
+}
+
+
+.arenita_2{
+	grid-area: arenita_2; 
+	width: 290px;
+	height: 379px ;
+	margin-left: 120px;
+	margin-top: 30px;
+}
+
+
+.titulo_main{
+	 grid-area: titulo_main; 
+	font-family: 'Mochiy Pop P One', sans-serif;
+	font-size: 2.5rem;
+	min-height: 100%;
+	padding-top: 170px;
+		margin-left: -30px;
+	color: #cc0606;
+	text-shadow: 3px -3px 1px #d6d6d6;
+}
+
+.subtitulo_main{
+	grid-area: titulo_main; 
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1rem;
+	min-height: 100%;
+	color: #cc0606;
+	float: right;
+	padding-top: 290px;
+	margin-left: -30px;
+
+}
+
+
+.footer{
+	grid-area: footer;
+	background-color: #000000;
+	height: 60px;
+}
+
+.uces{
+	width: 70px;
+	height: 40px;
+	float: left;
+	margin-left: 3%;
+	margin-top: 10px;
+	margin-right: 25%;
+}
+
+.minisitio{
+	font-family: 'Montserrat', sans-serif;
+	float: left;
+	margin-left: 390px;
+	margin-right: 31%;
+	margin-top: -25px;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 0.8rem;
+}
+
+.nick{
+	width: 150px;
+	height: 20px;
+	float: right;
+	clear: both;
+	margin-right: 3%;
+	margin-top: -30px;
+}
+
+#formulario{
+	width: 120%;
+	height: 460px;
+	background-color: #cc0606;
+	border-radius: 30px;
+	float: left;
+	padding-top: 1.5%;
+	padding-left: 4.5%;
+	margin-top: 3%;
+	margin-left: -30%;
+	text-align: left;
+	box-shadow: 1px 1px 10px black;
+}
+
+
+#texto_formulario{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.8rem;
+	min-height: 100%;
+	margin-top: 5%;
+	margin-left: 5%;
+	color: #ffffff;
+
+}
+
+#imagen_formulario{
+	width: 700px;
+	height: 500px;
+}
+
+.arenita_3{
+	width: 526px;
+	height: 318px ;
+	margin-left: 40px;
+	margin-top: 80px;
+	float: left;
+
+}
+
+.texto_formulario{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.9rem;
+	min-height: 100%;
+	margin-top: 10%;
+	margin-left: 6%;
+	color: #ffffff;
+
+}
+.caja {
+	width: 220px;
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+} 
+
+.caja_2 {
+	width: 220px;
+	height: 150px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+} 
+
+.boton{
+	width: 60%;
+	height: 40px;
+	background-color: #ffffff;
+	color: #cc0606;
+	border-radius: 10px;
+	font-size: 12px;
+	font-family: 'Mochiy Pop P One', sans-serif;
+	margin-left: 5%;
+}
+
+#kids{
+	padding-left: 20%;
+	padding-top: 11%;
+	width: 20%;
+	float: left;
+}
+
+.kids_div{
+	width: 400px;
+	height: 200px;
+	margin-top: 50px;
+	margin-left: -15%;
+	box-shadow: 10px 10px 20px #aaa;
+	float: right;
+}
+
+#teens{
+	padding-left: 20%;
+	padding-top: 2%;
+	width: 20%;
+	float: left;
+}
+
+.teens_div{
+	width: 400px;
+	height: 200px;
+	margin-top: -10px;
+	margin-left: -15%;
+	box-shadow: 10px 10px 20px #aaa;
+}
+
+.titulo_actividades{
+	font-family: 'Mochiy Pop P One', sans-serif;
+	font-size: 2.5rem;
+	min-height: 100%;
+	padding-top: 20px;
+	padding-left: 5%;
+	color: #cc0606;
+	text-shadow: 3px -3px 1px #d6d6d6;
+
+}
+
+.subtitulo_actividades{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2rem;
+	min-height: 100%;
+	margin-top: -120px;
+	padding-left: 5%;
+	color: #cc0606;
+}
+
+.texto_actividades{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.9rem;
+	min-height: 100%;
+	margin-top: -140px;
+	padding-left: 5%;
+	color: #000000;
+}
+
+.texto_actividades2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.9rem;
+	min-height: 100%;
+	margin-top: -160px;
+	padding-left: 5%;
+	color: #000000;
+}
+#galeria{
+	width: 200%;
+	height: 70%;
+	margin-left: -60%;
+	padding-left: 9%;
+	padding-top: 5%;
+	background-color: #cc0606;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 10px 10px 20px #aaa;
+	margin-top: 25%;
+}
+.texto_galería{
+	font-family: 'Mochiy Pop P One', sans-serif;
+	font-size: 2.5rem;
+	min-height: 100%;
+	padding-top: 30px;
+	padding-left: 100%;
+	color: #cc0606;
+	text-shadow: 3px -3px 1px #d6d6d6;
+
+}
+
+}
+
+/*Small  (mobile, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767px){
+
+.container{
+		grid-template: 
+		"header 	header " 	100px 
+		"main  	main 	 " 	auto
+		"footer 	footer " 	60px /
+		 200px   auto;
+	}
+
+.header{
+	 grid-template-columns: 1fr;
+  grid-template-areas: 
+    "logo nav "
+    "logo nav "
+    "logo nav "; 
+	grid-area: header;
+	background-color: #cc0606;
+}
+
+.logo{
+	grid-area: logo; 
+	float: left;
+	margin-left: 5px;
+	margin-top: 5px;
+	width: 70px;
+	height: 15px;
+
+}
+
+.navbar{
+	grid-area: navbar;
+   background-color: #cc0606;
+}
+
+nav li {
+	display: inline;
+}
+
+nav li a {
+	width: 8%;
+	height: 35px;
+	margin-left: 13%;
+	padding-top: 50px;
+	padding-left: 15%;
+	float: right;
+	text-decoration: none;
+	font-size: 12px;
+	text-align: center;
+	font-family: 'Mochiy Pop P One', sans-serif;
+	color: #ffffff;
+	transition: ease-in .4s;
+}
+
+nav li a:hover {
+   transform: scale(1.2);
+}
+
+.main{
+	display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "arenita_2 titulo_main";
+  grid-area: main;
+  background:
+	 url(../img/1.png) right top no-repeat,
+	 url(../img/2.png) right bottom no-repeat,
+	 url(../img/3.png) left bottom no-repeat,
+	 url(../img/4.png) left 100px no-repeat;
+	 }
+
+
+
+.arenita_2{
+	grid-area: arenita_2; 
+	width: 230px;
+	height: 319px ;
+	margin-left: 50px;
+	margin-top: 50px;
+}
+
+
+.titulo_main{
+	 grid-area: titulo_main; 
+	font-family: 'Mochiy Pop P One', sans-serif;
+	font-size: 1.5rem;
+	min-height: 100%;
+	padding-top: 200px;
+
+	color: #cc0606;
+	text-shadow: 3px -3px 1px #d6d6d6;
+}
+
+.subtitulo_main{
+	grid-area: titulo_main; 
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.8rem;
+	min-height: 100%;
+	color: #cc0606;
+	float: right;
+	padding-top: 280px;
+
+}
+
+
+.footer{
+	grid-area: footer;
+	background-color: #000000;
+	height: 60px;
+}
+
+.uces{
+	width: 70px;
+	height: 40px;
+	float: left;
+	margin-left: 3%;
+	margin-top: 10px;
+	margin-right: 25%;
+}
+
+.minisitio{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.5rem;
+	float: left;
+	margin-left: 220px;
+	margin-right: 200px;
+	margin-top: -25px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.nick{
+	width: 150px;
+	height: 20px;
+	float: right;
+	clear: both;
+	margin-right: 3%;
+	margin-top: -30px;
+}
+
+#formulario{
+	width: 120%;
+	height: 460px;
+	background-color: #cc0606;
+	border-radius: 30px;
+	padding-top: 1.5%;
+	padding-left: 4.5%;
+	margin-top: 3%;
+	text-align: left;
+	box-shadow: 1px 1px 10px black;
+}
+
+
+#texto_formulario{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.8rem;
+	min-height: 100%;
+	margin-top: 5%;
+	margin-left: 5%;
+	color: #ffffff;
+
+}
+
+#imagen_formulario{
+	width: 700px;
+	height: 500px;
+}
+
+.arenita_3{
+	width: 526px;
+	height: 318px ;
+	margin-left: 40px;
+	margin-top: 80px;
+}
+
+.texto_formulario{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.9rem;
+	min-height: 100%;
+	margin-top: 10%;
+	margin-left: 6%;
+	color: #ffffff;
+
+}
+.caja {
+	width: 220px;
+	padding-bottom: 15px;
+	margin-bottom: 10px;
+} 
+
+.caja_2 {
+	width: 220px;
+	height: 150px;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+} 
+
+.boton{
+	width: 60%;
+	height: 40px;
+	background-color: #ffffff;
+	color: #cc0606;
+	border-radius: 10px;
+	font-size: 12px;
+	font-family: 'Mochiy Pop P One', sans-serif;
+	margin-left: 5%;
+}
+
+#kids{
+	padding-left: 20%;
+	padding-top: 11%;
+	width: 20%;
+	float: left;
+}
+
+.kids_div{
+	width: 400px;
+	height: 200px;
+	margin-top: 50px;
+	margin-left: -15%;
+	box-shadow: 10px 10px 20px #aaa;
+	float: right;
+}
+
+#teens{
+	padding-left: 20%;
+	padding-top: 2%;
+	width: 20%;
+	float: left;
+}
+
+.teens_div{
+	width: 400px;
+	height: 200px;
+	margin-top: -10px;
+	margin-left: -15%;
+	box-shadow: 10px 10px 20px #aaa;
+}
+
+.titulo_actividades{
+	font-family: 'Mochiy Pop P One', sans-serif;
+	font-size: 2.5rem;
+	min-height: 100%;
+	padding-top: 20px;
+	padding-left: 5%;
+	color: #cc0606;
+	text-shadow: 3px -3px 1px #d6d6d6;
+
+}
+
+.subtitulo_actividades{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.2rem;
+	min-height: 100%;
+	margin-top: -120px;
+	padding-left: 5%;
+	color: #cc0606;
+}
+
+.texto_actividades{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.9rem;
+	min-height: 100%;
+	margin-top: -140px;
+	padding-left: 5%;
+	color: #000000;
+}
+
+.texto_actividades2{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 0.9rem;
+	min-height: 100%;
+	margin-top: -160px;
+	padding-left: 5%;
+	color: #000000;
+}
+#galeria{
+	width: 150%;
+	height: 90%;
+	margin-left: -80%;
+	padding-left: 7%;
+	padding-top: 5%;
+	background-color: #cc0606;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 10px 10px 20px #aaa;
+	margin-top: 25%;
+}
+.texto_galería{
+	font-family: 'Mochiy Pop P One', sans-serif;
+	font-size: 2.5rem;
+	min-height: 100%;
+	padding-top: 15px;
+	padding-left: 65%;
+	color: #cc0606;
+	text-shadow: 3px -3px 1px #d6d6d6;
+
+}
+
+}
+
+
+
+
+
